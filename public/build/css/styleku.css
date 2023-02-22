@@ -1,0 +1,95 @@
+.modelku table {
+    border: 1px solid rgb(192, 192, 192);
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.modelku table caption {
+    font-size: 1.5em;
+    margin: .25em 0 .75em;
+}
+
+.modelku table tr {
+    background: #ffffff;
+    border: 1px solid rgb(192, 192, 192);
+    padding: .20em;
+}
+
+.modelku table th,
+.modelku table td {
+    padding: .625em;
+    text-align: center;
+}
+
+.tabelku2 table th {
+    font-size: 1em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background: #1399ad;
+    color: white;
+}
+
+.modelku table th {
+    font-size: 1em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background: #17A2B8;
+    color: white;
+}
+
+.modelku table td img {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .modelku table {
+        border: 0;
+        border-radius: 5px;
+    }
+    .modelku table caption {
+        font-size: 1.3em;
+    }
+    .modelku table thead {
+        display: none;
+    }
+    .modelku table tr {
+        border-bottom: 3px solid rgb(192, 192, 192);
+        display: block;
+        margin-bottom: .725em;
+    }
+    .modelku table td {
+        border-bottom: 1px solid rgb(192, 192, 192);
+        display: block;
+        font-size: .9em;
+        text-align: right;
+    }
+    .modelku table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .modelku table td:last-child {
+        border-bottom: 0;
+    }
+    .tulisan-kiri {
+        text-align: left !important;
+    }
+    .tulisan-kanan {
+        text-align: right;
+    }
+    .tulisan-tengah {
+        text-align: center;
+    }
+}
+
+.img-dokumentasi {
+    width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    border: 1px solid rgb(228, 228, 228);
+    object-fit: cover;
+    object-position: 50% 50%;
+}
